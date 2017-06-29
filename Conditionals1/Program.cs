@@ -89,52 +89,84 @@ namespace Conditionals1
             //}
 
             //Switch Case Exercise
+            /*
+            Console.WriteLine("please type out any number: ");
+            string wordnumber = (Console.ReadLine());
 
-            Console.WriteLine("Please type out any number: ");
-            string wordNumber = (Console.ReadLine());
-
-            switch (wordNumber)
+            switch (wordnumber)
             {
-                case "Zero":
+                case "zero":
                     Console.WriteLine("0");
                     break;
-                case "One":
+                case "one":
                     Console.WriteLine("1");
                     break;
-                case "Two":
+                case "two":
                     Console.WriteLine("2");
                     break;
-                case "Three":
+                case "three":
                     Console.WriteLine("3");
                     break;
-                case "Four":
+                case "four":
                     Console.WriteLine("4");
                     break;
-                case "Five":
+                case "five":
                     Console.WriteLine("5");
                     break;
-                case "Six":
+                case "six":
                     Console.WriteLine("6");
                     break;
-                case "Seven":
+                case "seven":
                     Console.WriteLine("7");
                     break;
-                case "Eight":
+                case "eight":
                     Console.WriteLine("8");
                     break;
-                case "Nine":
+                case "nine":
                     Console.WriteLine("9");
                     break;
-                case "Ten":
+                case "ten":
                     Console.WriteLine("10");
                     break;
                 default:
-                    Console.WriteLine("Nope");
+                    Console.WriteLine("nope");
                     break;
+                    */
+
+            //Fizz Buzz Problem
+
+            Console.WriteLine("When prompted, please enter a test number followed by two numbers between 1 and 9");
+
+            Console.Write("Test Number: ");
+            int number = int.Parse(Console.ReadLine());
+            
+            Console.Write("First Number: ");
+            int firstNumber = int.Parse(Console.ReadLine());
+
+            Console.Write("Second Number: ");
+            int secondNumber = int.Parse(Console.ReadLine());
+
+            if (number % firstNumber == 0 && number % secondNumber == 0)
+            {
+                Console.WriteLine("FizzBuzz!");
+            }
+            else if (number % firstNumber == 0 && number % secondNumber != 0)
+            {
+                Console.WriteLine("Fizz!");
+            }
+            else if (number % firstNumber != 0 && number % secondNumber == 0)
+            {
+                Console.WriteLine("Buzz!");
+            }
+            else 
+            {
+                Console.WriteLine(number);
+            }
+            
+
             }
         }
 
 
 
     }
-}
